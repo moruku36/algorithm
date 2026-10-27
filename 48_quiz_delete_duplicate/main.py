@@ -16,6 +16,8 @@ def delete_duplicate_v1(numbers: List[int]) -> None:
 
 
 def delete_duplicate_v2(numbers: List[int]) -> None:
+    if not numbers:
+        return
     tmp = [numbers[0]]
     i, len_num = 0, len(numbers) - 1
     while i < len_num:
